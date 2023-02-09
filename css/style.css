@@ -1,0 +1,156 @@
+/* Estilos Generales */
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+.body_style {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+.margen{
+    margin: 30px 15px; /* Margen entre el contenido y los elementos que esten por fuera */
+}
+
+.w3-border {
+    border: 1px solid #ccc!important;
+}
+.w3-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+.w3-button {
+    border: 1px;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+/* Fin - Estilos Generales */
+
+/* Estilos Header */
+.headerContainer{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background-color: #9dc0bc;
+    padding:20px;
+    min-height:150px;
+}
+
+.headerContainer__logo{
+    font-family: 'Poppins';
+}
+
+.headerContainer__navigation{
+    font-family: 'Poppins';
+    padding-left:3px;
+    padding-right:3px;
+}
+
+.headerContainer__navigation li{
+    display:inline;
+}
+/* Fin - Estilos Header */
+
+
+/* Estilo Main */
+
+.mainContainerIndex{
+    font-family: 'Poppins';
+    background-color: black;
+    padding:20px; /* Espacio entre el contenedor y el contenido*/     
+    min-height:650px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainerIndex{
+    display: flex;
+    flex-direction:column;
+
+}
+
+.mainContainer__index img{
+    align-self: center;
+    vertical-align:middle;
+    border-style: none;
+
+
+}
+
+
+.mainContainerProducto{  /* CSS - Página Galeria */
+    height:auto;
+    width: 100%;
+
+}
+.mainContainerProducto{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.mainContainerProducto__tarjeta{
+    border: 1px solid whitesmoke;  /* Borde para la tarjeta */
+    border-radius: 8px; /* Borde redondeado*/   
+    padding:20px;
+    width: 300px;
+}
+
+.mainContainerProducto__tarjeta img{
+    width: 100%;
+    border-radius: 8px;
+}
+/* CSS - Página Galeria */
+
+
+/* Fin - Estilo Main */
+
+
+/***** Estilos Footer */
+.footerContainer{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    background-color: #9dc0bc;
+    padding:20px;
+    min-height:150px;
+}
+
+.footerContainer__logos{
+    gap: 15px;
+}
+
+.footerContainer__logos svg {
+    cursor: pointer;
+}
+
+.footerContainer__Condiciones{
+    font-family: 'Poppins';
+    padding-left:3px;
+    padding-right:3px;
+}
+
+.footerContainer__Copyright{
+    font-family: 'Poppins';
+    padding-left:3px;
+    padding-right:3px;
+}
+
+
+.footerContainer__Condiciones li{
+    display:inline;
+}
+/* Fin - Estilos Footer */
