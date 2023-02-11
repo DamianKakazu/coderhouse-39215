@@ -8,7 +8,7 @@
 .body_style {
     background-color: black;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
 }
 .margen{
     margin: 30px 15px; /* Margen entre el contenido y los elementos que esten por fuera */
@@ -85,6 +85,7 @@ footer{
 
 .headerContainer__navigation{
     font-family: 'Poppins';
+    font-size: 20px;
     padding-left:3px;
     padding-right:3px;
 }
@@ -98,6 +99,7 @@ footer{
 /* Estilo Main */
 .mainContainerIndex{
     font-family: 'Poppins';
+    font-size: 18px;
     background-color: black;
     padding:10px; /* Espacio entre el contenedor y el contenido*/     
     min-height:650px;
@@ -168,6 +170,7 @@ footer{
 
 .footerContainer__Condiciones{
     font-family: 'Poppins';
+    font-size: 16px;
     padding-left:3px;
     padding-right:3px;
 }
@@ -185,27 +188,75 @@ footer{
 /* Fin - Estilos Footer */
 
 
-/* Media query - Tablet */
-@media (max-width:575px){
+/* Media query - Mobile */
+@media screen and (max-width:575px){
 
     .mainContainerIndex img{
         width: 300px;
     }
+    .footerContainer__logos svg{
+        width: 20px;
+        height: 20px;
+    }
+
+    .headerContainer__navigation{
+        font-size: 14px;
+    }
     
+    .mainContainerIndex{
+        font-size: 14px;
+    }
+
+    .footerContainer__Condiciones{
+        font-size: 14px;
+    }
 } 
 
-@media (min-width: 576px) and (max-width:768px){
+/* Media query - Tablet */
+@media screen and (min-width: 576px) and (max-width:768px){
 
     .mainContainerIndex img{
         width: 500px;
     }
+    .footerContainer__logos svg{
+        width: 25px;
+        height: 25px;
+    } 
     
+    .headerContainer__navigation{
+        font-size: 18px;
+    }
+    
+    .mainContainerIndex{
+        font-size: 16px;
+    }
+
+    .footerContainer__Condiciones{
+        font-size: 14px;
+    }
 } 
 
-@media (min-width: 769px) and (max-width:992px){
+/* Media query - Pantallas */
+@media screen and (min-width: 769px) and (max-width:992px){
 
     .mainContainerIndex img{
         width: 600px;
     }
+
+    .footerContainer__logos svg{
+        width: 30px;
+        height: 30px;
+    }
     
+    .headerContainer__navigation{
+        font-size: 20px;
+    }
+    
+    .mainContainerIndex{
+        font-size: 18px;
+    }
+
+    .footerContainer__Condiciones{
+        font-size: 16px;
+    }
 } 
