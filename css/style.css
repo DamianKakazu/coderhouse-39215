@@ -65,6 +65,7 @@ main{
 footer{
     grid-area: footer;
 }
+/* Fin Grid */
 
 
 /* Estilos Header */
@@ -110,10 +111,11 @@ footer{
     flex-direction:column;
 }
 
-.mainContainer__index img{
+.mainContainerIndex img{
     align-self: center;
     vertical-align:middle;
     border-style: none;
+
 }
 
 
@@ -138,6 +140,7 @@ footer{
 .mainContainerProducto__tarjeta img{
     width: 100%;
     border-radius: 8px;
+    
 }
 /* CSS - Página Galeria */
 
@@ -180,3 +183,29 @@ footer{
     display:inline;
 }
 /* Fin - Estilos Footer */
+
+
+/* Media query - Tablet */
+@media (max-width:575px){
+
+    .mainContainerIndex img{
+        width: 300px;
+    }
+    
+} 
+
+@media (min-width: 576px) and (max-width:768px){
+
+    .mainContainerIndex img{
+        width: 500px;
+    }
+    
+} 
+
+@media (min-width: 769px) and (max-width:992px){
+
+    .mainContainerIndex img{
+        width: 600px;
+    }
+    
+} 
