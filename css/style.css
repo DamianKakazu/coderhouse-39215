@@ -39,6 +39,34 @@
 }
 /* Fin - Estilos Generales */
 
+
+/* Grid */
+body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+    ;
+}
+
+header{
+    grid-area: header;
+    height: 100%;
+}
+
+main{
+    grid-area: main;
+    max-height: 100%;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
 /* Estilos Header */
 .headerContainer{
     display: flex;
@@ -46,7 +74,8 @@
     justify-content: space-between;
     background-color: #9dc0bc;
     padding:20px;
-    min-height:150px;
+    min-height:125px;
+
 }
 
 .headerContainer__logo{
@@ -66,12 +95,12 @@
 
 
 /* Estilo Main */
-
 .mainContainerIndex{
     font-family: 'Poppins';
     background-color: black;
-    padding:20px; /* Espacio entre el contenedor y el contenido*/     
+    padding:10px; /* Espacio entre el contenedor y el contenido*/     
     min-height:650px;
+    max-height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -79,23 +108,20 @@
 .mainContainerIndex{
     display: flex;
     flex-direction:column;
-
 }
 
 .mainContainer__index img{
     align-self: center;
     vertical-align:middle;
     border-style: none;
-
-
 }
 
 
 .mainContainerProducto{  /* CSS - Página Galeria */
     height:auto;
     width: 100%;
-
 }
+
 .mainContainerProducto{
     display: flex;
     flex-wrap:wrap;
