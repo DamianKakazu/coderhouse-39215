@@ -62,8 +62,19 @@ footer{
     grid-area: footer;
 }
 
+.containerCustom {
+    
+    display: grid;
+    grid-template-columns: 100%;
+    min-height: 100%;
+    grid-template-areas:
+     "header header"
+     "main main"
+     "footer footer";
+     grid-template-rows: auto 1fr auto;
+    }
 
-.container, .container-fluid {
+.container-fluid {
     
     display: grid;
     grid-template-columns: 100%;
@@ -140,7 +151,7 @@ footer{
     padding:10px; /* Espacio entre el contenedor y el contenido*/     
     min-height:650px;
     max-height: 100%;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
