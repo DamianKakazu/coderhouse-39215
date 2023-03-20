@@ -1,0 +1,41 @@
+
+
+/***** Estilos Footer */
+.footerContainer{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    background-color: #9dc0bc;
+    padding:20px;
+    min-height:150px;
+}
+
+.footerContainer__logos{
+    gap: 15px;
+    svg {
+        cursor: pointer;
+    }
+}
+
+
+
+.footerContainer__Condiciones{
+    font-family: $font-family;
+    font-size: 16px;
+    padding-left:3px;
+    padding-right:3px;
+
+    li{
+        display:inline;
+    }
+}
+
+.footerContainer__Copyright{
+    font-family: $font-family;
+    padding-left:3px;
+    padding-right:3px;
+}
+
+
+
+/* Fin - Estilos Footer */

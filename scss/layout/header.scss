@@ -1,0 +1,56 @@
+
+
+
+/* Estilos Header */
+.headerContainer{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background-color: #9dc0bc;
+    padding:20px;
+    min-height:125px;
+
+}
+
+.headerContainer__logo{
+    font-family: $font-family;
+}
+
+.headerContainer__navigation{
+    font-family: $font-family;
+    font-size: 20px;
+    padding-left:3px;
+    padding-right:3px;
+    li{
+        display:inline;
+    }
+
+    a{
+        position: relative;
+        cursor: pointer;
+        color: #eee;
+        padding: 8px 10px;
+        text-decoration: none;
+    }
+    a:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom:0;
+        width: 0;
+        height: 3px;
+        background-color: #eee;
+    
+        transition: width .5s;
+    }
+    
+    a:hover:before{
+        width: 100%;
+    }
+    
+
+}
+
+
+
+/* Fin - Estilos Header */
